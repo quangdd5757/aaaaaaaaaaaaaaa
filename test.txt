@@ -1,0 +1,29 @@
+package example;
+
+import org.junit.Test;
+
+public class TestExample {
+    
+    @Test
+    public void TestNghiemDoi() 
+    {
+        Equatione = new Equation(1, -4, 4);
+        assertEquals("Nghiem doi 1.", e.result1, 2);
+        assertEquals("Nghiem doi 2.", e.result2, 2);
+    }
+
+    @Test
+    public void NghiemPhanBiet() 
+    {
+        Equatione = new Equation(1, -5, 6);
+        assertEquals("Nghiem 1.", e.result1, 2);
+        assertEquals("Nghiem 2.", e.result2, 3);
+    }
+
+    @Test
+    public void VoNghiem() 
+    {
+        Equatione = new Equation(1, 2, 3);
+        assertEquals("Vo nghiem.", e.result, true);
+    }
+}

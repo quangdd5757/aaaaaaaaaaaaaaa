@@ -1,0 +1,35 @@
+package example;
+
+public class TestJUnit 
+{
+    private double a;
+    private double b;
+    private double c;
+    public double result1;
+    public double result2;
+    public bool result;
+    
+    public Equation(double a, double b, double c)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        Solution();
+    }
+    
+    public void Solution()
+    {
+        double delta = b*b - 4*a*c;
+        if(delta < 0)
+            result = true;
+	if(delta = 0)
+	    result = true;	
+	    result1 = result2 = -b / (2*a);
+        else
+	{
+            result = false;
+            result1 = (-b - Math.sqrt(delta)) / (2*a);
+            result2 = (-b + Math.sqrt(delta)) / (2*a);
+        }
+    }
+}
